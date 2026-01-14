@@ -8,24 +8,16 @@ import java.util.List;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-            var app = Javalin.create()
-                .start(8080); // This opens the door at localhost:8080
+        var app = Javalin.create(config -> {
+            config.bundledPlugins.enableCors(cors -> cors.addRule(it -> it.anyHost()));
+        }).start(8080);
 
-        // 2. The "Dummy" Endpoint
-        // When you visit /test, this block of code runs
-            app.get("/test", ctx -> {
-                ctx.result("Hello World!");
-        });
+        // Clean, readable routing
+        app.get("/tasks", ctx -> TaskController.getAllTasks(ctx));
+        app.get("/task/{id}", ctx -> TaskController.getTaskById(ctx));
 
-        app.get("/tasks", ctx -> {
-            // Use your JsonLoader from Phase 1
-            List<Task> myTasks = JsonLoader.loadTasksFromJson("tasks.json");
+        Runtime.getRuntime().addShutdownHook(new Thread(app::stop));
 
-            // Javalin sees you're returning a List and automatically
-            // uses Jackson to turn it back into JSON for the browser!
-            ctx.json(myTasks);
-        });
-
-        System.out.println("Server is running at http://localhost:8080/test");
+        System.out.println("Server is running at http://localhost:8080/tasks");
     }
 }

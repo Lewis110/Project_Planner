@@ -1,35 +1,102 @@
 [
   {
-    "id": "T1",
-    "name": "Calculus Lecture",
-    "priority": 10,
-    "hoursNeeded": 1.0,
+    "id": 1,
+    "name": "Morning Yoga",
+    "priority": 2,
+    "hoursNeeded": 0.75,
+    "isFixed": true,
+    "startTime": "07:00",
+    "dayIndex": 0,
+    "category": "Health"
+  },
+  {
+    "id": 2,
+    "name": "Deep Work: Coding",
+    "priority": 1,
+    "hoursNeeded": 2.5,
     "isFixed": true,
     "startTime": "09:00",
     "dayIndex": 0,
-    "deadlineDays": 1,
-    "category": "Academic"
+    "category": "Work"
   },
   {
-    "id": "T2",
-    "name": "Portfolio Project",
-    "priority": 9,
-    "hoursNeeded": 4.0,
-    "isFixed": false,
-    "startTime": null,
+    "id": 3,
+    "name": "Team Standup",
+    "priority": 1,
+    "hoursNeeded": 0.5,
+    "isFixed": true,
+    "startTime": "11:30",
     "dayIndex": 0,
-    "deadlineDays": 3,
-    "category": "Career"
+    "category": "Work"
   },
   {
-    "id": "T3",
-    "name": "Gym Session",
-    "priority": 7,
+    "id": 4,
+    "name": "Lunch Break",
+    "priority": 3,
+    "hoursNeeded": 1.0,
+    "isFixed": true,
+    "startTime": "12:30",
+    "dayIndex": 0,
+    "category": "Personal"
+  },
+  {
+    "id": 5,
+    "name": "Review PRs",
+    "priority": 2,
     "hoursNeeded": 1.5,
     "isFixed": false,
-    "startTime": null,
+    "startTime": "14:00",
     "dayIndex": 0,
-    "deadlineDays": 1,
+    "category": "Work"
+  },
+  {
+    "id": 6,
+    "name": "Client Call",
+    "priority": 1,
+    "hoursNeeded": 1.0,
+    "isFixed": true,
+    "startTime": "16:00",
+    "dayIndex": 0,
+    "category": "Work"
+  },
+  {
+    "id": 7,
+    "name": "Gym Session",
+    "priority": 2,
+    "hoursNeeded": 1.25,
+    "isFixed": false,
+    "startTime": "17:30",
+    "dayIndex": 0,
     "category": "Health"
+  },
+  {
+    "id": 8,
+    "name": "Dinner",
+    "priority": 3,
+    "hoursNeeded": 1.0,
+    "isFixed": true,
+    "startTime": "19:00",
+    "dayIndex": 0,
+    "category": "Personal"
+  },
+  {
+    "id": 9,
+    "name": "Read Documentation",
+    "priority": 2,
+    "hoursNeeded": 0.5,
+    "isFixed": false,
+    "startTime": "21:00",
+    "dayIndex": 0,
+    "category": "Learning"
+  },
+  {
+    "id": 10,
+    "name": "Sleep Prep",
+    "priority": 3,
+    "hoursNeeded": 0.5,
+    "isFixed": true,
+    "startTime": "22:30",
+    "dayIndex": 0,
+    "category": "Personal"
   }
 ]
