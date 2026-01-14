@@ -1,0 +1,35 @@
+[
+  {
+    "id": "T1",
+    "name": "Calculus Lecture",
+    "priority": 10,
+    "hoursNeeded": 1.0,
+    "isFixed": true,
+    "startTime": "09:00",
+    "dayIndex": 0,
+    "deadlineDays": 1,
+    "category": "Academic"
+  },
+  {
+    "id": "T2",
+    "name": "Portfolio Project",
+    "priority": 9,
+    "hoursNeeded": 4.0,
+    "isFixed": false,
+    "startTime": null,
+    "dayIndex": 0,
+    "deadlineDays": 3,
+    "category": "Career"
+  },
+  {
+    "id": "T3",
+    "name": "Gym Session",
+    "priority": 7,
+    "hoursNeeded": 1.5,
+    "isFixed": false,
+    "startTime": null,
+    "dayIndex": 0,
+    "deadlineDays": 1,
+    "category": "Health"
+  }
+]
